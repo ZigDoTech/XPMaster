@@ -1,0 +1,15 @@
+name: Idea or other feedback
+description: Something about the addon window, settings, or anything else.
+labels: ["feedback"]
+body:
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Feedback
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Addon version
+      placeholder: "v0.2.0"

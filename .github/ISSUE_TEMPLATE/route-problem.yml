@@ -1,0 +1,52 @@
+name: Route or quest problem
+description: A step is wrong, a quest giver or mob isn't where the guide says, or the guide got stuck.
+labels: ["route"]
+body:
+  - type: dropdown
+    id: race
+    attributes:
+      label: Race
+      options: [Human, Dwarf, Gnome, Night Elf, Orc, Troll, Tauren, Undead, Skyborne Elf (Alliance), Skyborne Elf (Horde)]
+    validations:
+      required: true
+  - type: dropdown
+    id: class
+    attributes:
+      label: Class
+      options: [Warrior, Paladin, Hunter, Rogue, Priest, Shaman, Mage, Warlock, Druid]
+    validations:
+      required: true
+  - type: input
+    id: level
+    attributes:
+      label: Level
+      placeholder: "12"
+    validations:
+      required: true
+  - type: input
+    id: step
+    attributes:
+      label: Guide step
+      description: The step text the guide window was showing.
+      placeholder: "Turn in A Refugee's Quandary"
+    validations:
+      required: true
+  - type: textarea
+    id: where
+    attributes:
+      label: /xpm where
+      description: Stand at the spot (target the NPC if there is one), type /xpm where, and paste what it prints.
+      render: text
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What went wrong, and what you expected instead.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Addon version
+      description: Shown in WowUp, or in the zip name.
+      placeholder: "v0.2.0"
