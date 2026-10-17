@@ -44,6 +44,12 @@ body:
       description: What went wrong, and what you expected instead.
     validations:
       required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Debug log
+      description: Type /xpm log, press Ctrl+A then Ctrl+C in the window that opens, and paste it here. It lists recent quests, steps and any XPMaster errors. If you use BugSack, paste any XPMaster error from it too.
+      render: text
   - type: input
     id: version
     attributes:

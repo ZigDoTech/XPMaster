@@ -22,4 +22,7 @@ Type `/xpm` to show or hide the guide, and `/xpm options` for settings.
 
 ## Reporting a problem
 
-Open an [issue](https://github.com/ZigDoTech/XPMaster/issues/new/choose). It helps a lot to include what `/xpm where` prints while you're standing at the spot, and the step the guide was showing.
+Open an [issue](https://github.com/ZigDoTech/XPMaster/issues/new/choose). It helps a lot to include:
+
+- what `/xpm where` prints while you're standing at the spot, and the step the guide was showing;
+- the debug log: type `/xpm log`, press Ctrl+A then Ctrl+C in the window, and paste it into the issue. It lists recent quests, step changes and any XPMaster errors. Type `/xpm bug <what went wrong>` right when it happens and your note lands in the log at that moment.
