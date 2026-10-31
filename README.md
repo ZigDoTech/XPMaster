@@ -6,7 +6,7 @@ This is a test build shared with friends and guildmates. Please don't repost it 
 
 ## Install with WowUp
 
-1. In WowUp, pick your WoW: Forever install at the top.
+1. Update WowUp to 2.24.1 or newer, the first version that knows about WoW: Forever, then pick your Forever install at the top.
 2. Open **Get Addons**, then **Install from URL**.
 3. Paste `https://github.com/ZigDoTech/XPMaster` and install.
 

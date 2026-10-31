@@ -1,0 +1,24 @@
+name: Share logs
+description: Send the logs you turned on in XPMaster's Logging page, so routes can be planned from real play.
+labels: ["logs"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping! In game, open XPMaster's settings, go to **Logging**, press **Copy logs**, select everything in the window (Ctrl+A) and copy it (Ctrl+C). Then paste it below.
+
+        Issues here are **public**. The logs hold your character's race, class, level and where you went, but not your character or account name.
+        If the text is too long to paste, save it as a .txt file and drag the file into the box instead.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Paste the Copy logs text, or drag in a .txt file.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything unusual?
+      description: Optional. For example, you died a lot, played with a friend, or took a different route on purpose.
